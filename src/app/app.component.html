@@ -1,36 +1,93 @@
-<div class="w-100 d-flex justify-content-center align-item-center m-0 ap-profile-page-main-body-section">
-  <div class="d-flex justify-content-center align-item-center ap-profile-page-start">
-    <div>
-      <div class="d-flex justify-content-center">
-        <ngx-avatars [name]="'NISCHITHA'" src="../assets/profile-pic/Screenshot_20241208_182311_Chrome.jpg" size="200"></ngx-avatars>
-      </div>
-      <div class="d-flex justify-content-center pt-3">
-        <span class="ap-profile-page-name">
-          Nischitha N
-        </span>
-      </div>
-      <div class="pt-3">
-        <div class="d-flex justify-content-center align-item-center m-0 pt-2" style="column-gap: 10px;">
-          <div class="ap-profile-page-common-button30">
-            <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <span class="ap-profile-page-name ap-profile-page-button-css">Home</span>
+<div style="height: 100vh;">
+  <div class="w-100 d-flex justify-content-center align-item-center m-0 ap-profile-page-main-body-section">
+    <div class="d-flex justify-content-center align-item-center ap-profile-page-start">
+      <div>
+        <!-- <div class="d-flex justify-content-center">
+          <ngx-avatars [name]="'NISCHITHA'" src="../assets/profile-pic/Screenshot_20241208_182311_Chrome.jpg" size="200"></ngx-avatars>
+        </div> -->
+        <div class="ap-profile-page-bento-grid">
+          <div class="ap-profile-page-profile-picture">
+            <img src="../assets/profile-pic/Screenshot_20241208_182311_Chrome.jpg" alt="Profile Picture" />
           </div>
-          <div class="ap-profile-page-common-button30">
-            <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <span class="ap-profile-page-name ap-profile-page-button-css">Contact</span>
+          <div class="ap-profile-page-biography">
+            <h2 style="font-family: sans-serif;font-size: xxx-large;margin: 0px;box-shadow: none;">Nischitha N</h2>
+            <div style="font-family: sans-serif;font-size: xx-large;padding: 1px 0px;border: none;box-shadow: none;">Angular developer</div>
+            <div class="typing-container m-0" style="font-family: sans-serif;padding: 1px 0px;border: none;box-shadow: none;">
+                Expertise in building dynamic, scalable, and responsive single-page applications.
+            </div>
+            <!-- <div style="font-family: sans-serif;padding: 1px 0px;border: none;">
+              Experienced Angular Developer with 2 years of expertise in designing and implementing robust single-page applications using Angular.
+            </div> -->
+          </div>
+          <div class="ap-profile-page-skills">
+            <h2 style="font-family: sans-serif;font-size: xx-large;margin: 0px;box-shadow: none;">Skills</h2>
+            <ul>
+              <li>Angular (versions 2+ to the latest)</li>
+              <li>HTML, CSS, SCSS</li>
+              <li>JavaScript, TypeScript</li>
+              <li>Experienced in using Git Flow for version control</li>
+              <li>Skilled in managing Agile workflows and tracking sprint progress.</li>
+            </ul>
+          </div>
+          <div class="ap-profile-page-portfolio">
+            <h2 style="font-family: sans-serif;font-size: xx-large;margin: 0px;box-shadow: none;">Project and resume</h2>
+            <p>Check out some of my work below:</p>
+            <ul>
+              <li><a href="#">Project 1</a></li>
+              <li><a href="#">Project 2</a></li>
+              <li><a href="#">Project 3</a></li>
+            </ul>
+          </div>
+          <div class="ap-profile-page-contact">
+            <h2 style="font-family: sans-serif;font-size: xx-large;margin: 0px;box-shadow: none;">Contact</h2>
+            <div style="font-family: sans-serif;margin: 0px;box-shadow: none;border: none;padding: 1px 0px;">Email: nischithan2000@gmail.com</div>
+            <div style="font-family: sans-serif;margin: 0px;box-shadow: none;border: none;padding: 1px 0px;">Phone: +91 7338608740</div>
+            <div style="font-family: sans-serif;margin: 0px;box-shadow: none;border: none;padding: 1px 0px;">Linkedin: <a href="https://www.linkedin.com/in/nischitha-n-45999028a" target="_blank">www.linkedin.com/in/nischitha-n-45999028a</a></div>
+            <div style="font-family: sans-serif;margin: 0px;box-shadow: none;border: none;padding: 1px 0px;">GitHub: <a href="https://github.com/NischiNN" target="_blank">github.com/NischiNN</a></div>
           </div>
         </div>
-        <div class="d-flex justify-content-center align-item-center m-0 pt-2" style="column-gap: 10px;">
-          <div class="ap-profile-page-common-button30">
-            <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <span class="ap-profile-page-name ap-profile-page-button-css">About</span>
-          </div>
-          <div class="ap-profile-page-common-button30">
-            <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <span class="ap-profile-page-name ap-profile-page-button-css">Education</span>
-          </div>
+        <!-- <div class="d-flex justify-content-center pt-3">
+          <span class="ap-profile-page-name">
+            Nischitha N
+          </span>
         </div>
+        <div class="pt-3">
+          <div class="d-flex justify-content-center align-item-center m-0 pt-2" style="column-gap: 10px;">
+            <div class="ap-profile-page-common-button30" (click)="openWidgetModal(widgetModal)">
+              <span><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span class="ap-profile-page-name ap-profile-page-button-css">Home</span>
+            </div>
+            <div class="ap-profile-page-common-button30">
+              <span><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span class="ap-profile-page-name ap-profile-page-button-css">Contact</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-item-center m-0 pt-2" style="column-gap: 10px;">
+            <div class="ap-profile-page-common-button30">
+              <span><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span class="ap-profile-page-name ap-profile-page-button-css">About</span>
+            </div>
+            <div class="ap-profile-page-common-button30">
+              <span><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span class="ap-profile-page-name ap-profile-page-button-css">Education</span>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
+    <div>
+      <div class="ap-profile-page-wave ap-profile-page-wave1"></div>
+      <div class="ap-profile-page-wave ap-profile-page-wave2"></div>
+      <div class="ap-profile-page-wave ap-profile-page-wave3"></div>
+      <div class="ap-profile-page-wave ap-profile-page-wave4"></div>
+    </div>
   </div>
+  <!-- <div style="height: 200px;">
+    
+  </div> -->
+  <ng-template #widgetModal let-modal>
+    <div>
+      open modal on right
+    </div>
+  </ng-template>
 </div>
